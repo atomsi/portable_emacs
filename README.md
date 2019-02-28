@@ -1,6 +1,6 @@
 # portable_emacs
 building personal portable emacs
-## 运行环境:
+## Envi:
 1. win7+
 2. emacs 26.1 for win64
 3. USB storage
@@ -84,7 +84,10 @@ building personal portable emacs
    * download curl https://curl.haxx.se/windows/dl-7.64.0/curl-7.64.0-win64-mingw.zip
    * unzip the folder of bin into d:\home\bin
    * update %PATH% (d:\home\bin)
-* enable markdown mode in init.el
+* 
+	* install pandoc 
+		* https://github.com/jgm/pandoc/releases/download/2.6/pandoc-2.6-windows-x86_64.zip
+	* enable markdown mode in init.el
 ```
 ;; MARKDOWN MODE CONFIGURATION
 ;; --------------------------------------
@@ -102,8 +105,8 @@ building personal portable emacs
    "d:\\home\\bin\\pandoc.exe -f markdown -t html -s --highlight-style espresso"))
 ```
 then, issue the following command: M-x package-install RET markdown-mode RET. 
-* install pandoc 
-	* https://github.com/jgm/pandoc/releases/download/2.6/pandoc-2.6-windows-x86_64.zip
-	* update 
+
+## To do:
+* the path to pandoc is fixed in windows envi. 
 	
 	
