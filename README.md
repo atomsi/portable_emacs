@@ -94,3 +94,9 @@ building personal portable emacs
    * unzip the folder of bin into d:\home\bin
    * update %PATH% (d:\home\bin)
 * enable markdown mode
+```
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+(package-initialize)
+```
