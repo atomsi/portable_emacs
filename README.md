@@ -97,9 +97,13 @@ building personal portable emacs
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
+(custom-set-variables
+ '(markdown-command
+   "d:\\home\\bin\\pandoc.exe -f markdown -t html -s --highlight-style espresso"))
 ```
 then, issue the following command: M-x package-install RET markdown-mode RET. 
 * install pandoc 
 	* https://github.com/jgm/pandoc/releases/download/2.6/pandoc-2.6-windows-x86_64.zip
+	* update 
 	
 	
