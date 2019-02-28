@@ -76,16 +76,7 @@ building personal portable emacs
 (require 'py-autopep8)
 	(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
-;; DOWN MODE CONFIGURATION
-;; --------------------------------------
 
-(require markdown-mode
-  :ensure t
-  :commands (markdown-mode gfm-mode)
-  :mode (("README\\.md\\'" . gfm-mode)
-         ("\\.md\\'" . markdown-mode)
-         ("\\.markdown\\'" . markdown-mode))
-  :init (setq markdown-command "multimarkdown"))
 
 ;; init.el ends here
 ```
@@ -93,8 +84,10 @@ building personal portable emacs
    * download curl https://curl.haxx.se/windows/dl-7.64.0/curl-7.64.0-win64-mingw.zip
    * unzip the folder of bin into d:\home\bin
    * update %PATH% (d:\home\bin)
-* enable markdown mode
+* enable markdown mode in init.el
 ```
+;; DOWN MODE CONFIGURATION
+;; --------------------------------------
 (require 'package)
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
