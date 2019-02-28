@@ -86,7 +86,7 @@ building personal portable emacs
    * update %PATH% (d:\home\bin)
 * enable markdown mode in init.el
 ```
-;; DOWN MODE CONFIGURATION
+;; MARKDOWN MODE CONFIGURATION
 ;; --------------------------------------
 (require 'package)
 (add-to-list 'package-archives
@@ -99,3 +99,7 @@ building personal portable emacs
 (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
 ```
 then, issue the following command: M-x package-install RET markdown-mode RET. 
+* install pandoc 
+	* https://github.com/jgm/pandoc/releases/download/2.6/pandoc-2.6-windows-x86_64.zip
+	
+	
