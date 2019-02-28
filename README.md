@@ -93,3 +93,4 @@ building personal portable emacs
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (package-initialize)
 ```
+then, issue the following command: M-x package-install RET markdown-mode RET. 
