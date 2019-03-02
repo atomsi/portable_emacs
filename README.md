@@ -84,10 +84,10 @@ building personal portable emacs
    * download curl https://curl.haxx.se/windows/dl-7.64.0/curl-7.64.0-win64-mingw.zip
    * unzip the folder of bin into d:\home\bin
    * update %PATH% (d:\home\bin)
-* 
-	* install pandoc 
-		* https://github.com/jgm/pandoc/releases/download/2.6/pandoc-2.6-windows-x86_64.zip
-	* enable markdown mode in init.el
+
+* install pandoc 
+   * https://github.com/jgm/pandoc/releases/download/2.6/pandoc-2.6-windows-x86_64.zip
+* enable markdown mode in init.el
 ```
 ;; MARKDOWN MODE CONFIGURATION
 ;; --------------------------------------
